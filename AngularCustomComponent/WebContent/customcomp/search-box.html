@@ -1,0 +1,10 @@
+<div class="search-box">
+    <input class="form-control"
+           ng-model="ctrl.searchValue"
+           ng-model-options="{ debounce: 100 }"
+           id="search-box"
+           placeholder="search" 
+           ng-change="ctrl.onChange({search: ctrl.searchValue, active: ctrl.onlyActive})"/>
+           
+           <item data-set="{name: 'Only active items'}" ng-click="ctrl.onlyActive = !!!ctrl.onlyActive"></item>
+</div>

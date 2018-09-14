@@ -1,0 +1,9 @@
+<div class="items-list">
+  <h3>{{ctrl.title}}</h3>
+  <span ng-if="ctrl.items.length == 0">No items available.</span>
+  <ul class="items">
+    <li ng-repeat="item in ctrl.items">
+      <item data-set="item" on-click="ctrl.onClick({item: item})"></item>
+    </li>
+  </ul>
+</div>
